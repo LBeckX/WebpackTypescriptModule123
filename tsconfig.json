@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./dist/public/",
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "target": "ES6",
     "module": "ES2015",
     "jsx": "react",

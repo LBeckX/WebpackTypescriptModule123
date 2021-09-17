@@ -1,13 +1,6 @@
-import {Image} from "./ts/image";
-import {Gallery} from "./ts/gallery";
-import './app.scss';
+import * as _ from "lodash";
 
-(function () {
-    const images = [
-      new Image('./files/img/w3.jpg', '500px'),
-      new Image('./files/img/ciri.png', '500px'),
-    ];
+const templateFn = _.template('<div class="my-template"><%= comment %></div>');
 
-    const gallery = new Gallery(images);
-    gallery.print();
-})();
+const html = templateFn({comment: 'This is my important comment'});
+document.body.innerHTML += html;

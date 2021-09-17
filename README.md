@@ -1,5 +1,3 @@
-# Init from 0
-
 
 1. Install Webpack, TypeScript, Nodemon
 ```shell
@@ -14,4 +12,10 @@ npm install --save-dev webpack webpack-cli typescript ts-loader
 
 ```shell
 npm install -D css-loader sass-loader node-sass mini-css-extract-plugin
+```
+
+5. Install lodash
+
+```shell
+npm install --save lodash @types/lodash
 ```
